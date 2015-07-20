@@ -12,6 +12,7 @@ namespace _7_9_15_ExperIT_LoopLab2_Reverse
         {
             String name = "";
             int iterator = 0; //counts the number of strings the user wants to enter
+
             List<string> myList = new List<string>(); //Collection of strings to hold the users input
 
             Console.WriteLine("Enter a String to Reverse");//user is first prompted to enter a string to just reverse
@@ -23,7 +24,7 @@ namespace _7_9_15_ExperIT_LoopLab2_Reverse
                 Console.Write(name[x]);
             }
 
-            Console.WriteLine();//pause 
+            Console.WriteLine();//extra space
 
  //takes in the number of strings the user wants to enter
             Console.WriteLine("How many strings do you want to enter?");
@@ -32,8 +33,8 @@ namespace _7_9_15_ExperIT_LoopLab2_Reverse
  //iterates through the loop based on the number of strings the user wants to enter
             for (int x = 0; x < iterator;x++)
             {
-            Console.WriteLine("Enter a String to Reverse");//prompts the user for a string
-            name =Console.ReadLine();//pause
+            Console.WriteLine("Enter String #"+ (x+1) + " to the Array");//prompts the user for a string
+            name =Console.ReadLine();
             myList.Add(name);//adds the string to myList
             }
 
@@ -50,8 +51,9 @@ namespace _7_9_15_ExperIT_LoopLab2_Reverse
                 }
                 Console.Write(" ");//adds a space inbetween names
             }
+            
    
-            Console.Read();
+            Console.Read();//pause
         }
     }
 }
